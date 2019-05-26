@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { shallowMount } from '@vue/test-utils';
-import { books, storeSetup, localVue } from './helpers';
+import { books, storeSetup, localVue } from '../helpers';
 import Book from '@/views/Book.vue';
 
 let store, state;

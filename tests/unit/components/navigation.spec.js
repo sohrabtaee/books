@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { shallowMount } from '@vue/test-utils';
-import { storeSetup, localVue } from './helpers';
+import { storeSetup, localVue } from '../helpers';
 
 import Navigation from '@/components/Navigation.vue';
 

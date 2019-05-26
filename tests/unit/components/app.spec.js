@@ -1,6 +1,6 @@
 import sinon from 'sinon';
 import { shallowMount } from '@vue/test-utils';
-import { storeSetup, localVue } from './helpers';
+import { storeSetup, localVue } from '../helpers';
 
 import App from '@/App.vue';
 

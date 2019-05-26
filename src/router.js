@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import store from './store';
+import store from './store/index';
 // routes
 import Discover from './views/Discover.vue';
 import Login from './views/Login.vue';
