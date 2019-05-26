@@ -42,7 +42,7 @@ export default {
       // but for this short list, I decided to find the book from list of the books
       const book = this.books.find(book => book.id === this.bookId);
       // if the user has free account, show them half of the content
-      if (book && this.accessType === 'free') {
+      if (book && this.accessType !== 'premium') {
         book.content = book.content.slice(0, book.content.length / 2);
       }
       return book;
