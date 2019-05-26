@@ -16,6 +16,7 @@ export default {
     BHeader
   },
   mounted() {
+    // get categories and books as soon as the app launches
     this.getCategories();
     this.getBooks();
   },

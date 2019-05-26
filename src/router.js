@@ -27,6 +27,7 @@ const router = new Router({
       component: Book
     },
     {
+      // for any other route, show page not found.
       path: '*',
       component: PageNotFound
     }
