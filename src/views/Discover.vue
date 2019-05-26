@@ -40,6 +40,9 @@ export default {
     };
   },
   methods: {
+    // I could have inlined this simple code in the template
+    // but I believe in avoiding JS code in the templates as much as possible
+    // keeping the JS part in the script part, makes it easier to test and reason about
     setFilter(categoryId) {
       this.categoryId = categoryId;
     }

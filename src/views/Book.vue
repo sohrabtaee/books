@@ -35,6 +35,11 @@ export default {
       if (!this.bookId) {
         return null;
       }
+      // I have re-used the books array instead of calling the API
+      // but in the case of huge amount of records, or pagination
+      // or considering when a user opens a link directly to this page
+      // it would be better to fetch the book from the API
+      // but for this short list, I decided to find the book from list of the books
       const book = this.books.find(book => book.id === this.bookId);
       // if the user has free account, show them half of the content
       if (book && this.accessType === 'free') {
